@@ -14,6 +14,45 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+# Next with json-server
+
+## Install
+
+npm install json-server
+
+## Usage
+
+Create a db.js file
+
+Pass it to JSON server db.json
+$ npx json-server db.json --port 4000
+
+Get a REST API
+
+$ curl http://localhost:4000/posts/1
+{
+   "id": 1,
+   "title": "a title"
+}
+
+Run json-server --help  for a list of option
+
+## Routes
+Based on example db.json, you will get the following routes:
+
+GET    /posts
+GET    /posts/:id
+POST   /posts
+PUT    /posts/:id
+PATCH  /posts/:id
+DELETE /posts/:id
+
+## Same for comments
+
+GET   /profile
+PUT   /profile
+PATCH /profile
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -68,3 +107,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
