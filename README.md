@@ -40,12 +40,12 @@ Run json-server --help  for a list of option
 ## Routes
 Based on example db.json, you will get the following routes:
 
-GET    /posts
-GET    /posts/:id
-POST   /posts
-PUT    /posts/:id
-PATCH  /posts/:id
-DELETE /posts/:id
+### GET    /posts
+### GET    /posts/:id
+### POST   /posts
+### PUT    /posts/:id
+### PATCH  /posts/:id
+### DELETE /posts/:id
 
 ## Same for comments
 
